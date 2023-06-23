@@ -1,0 +1,167 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 20px 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container header picture img {
+  width: 150px;
+}
+
+.container header a {
+  color: #D90504;
+  font-size: 3rem;
+}
+
+.contentFind {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.contentFind h1 {
+  font-size: 2rem;
+  color: #D90504;
+}
+
+.contentFind > div select {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  border: 1px solid;
+  font-size: 1.6rem;
+}
+
+.contentFind > div button {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: #E9E9E9;
+  font-size: 1.8rem;
+  background: #D90504;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentFind > div button svg {
+  margin-right: 5px;
+}
+
+.contentResult {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.contentResult h2 {
+  font-size: 2rem;
+  color: #D90504;
+  margin-bottom: 15px;
+}
+
+.contentConsult {
+  width: 100%;
+  padding: 20px 25px;
+  background: #DADED5;
+  border-radius: 6px;
+  color: #D90504;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contentConsultantInfo {
+  font-size: 2rem;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentConsultantInfo a {
+  color: #D90504;
+}
+
+.contentConsultantInfo > div {
+  display: flex;
+  align-items: center;
+}
+
+.contentConsultantContact {
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contentConsultantContact > a {
+  background: #D90504;
+  color: #F2F2F2;
+  height: 35px;
+  border-radius: 6px;
+  font-size: 2rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(min-width: 800px) {
+  .container {
+    padding: 50px 70px 0px;
+  }
+
+  .container header picture img {
+    width: 200px;
+  }
+
+  .container header a {
+    font-size: 4rem;
+  }
+
+  .contentFind h1 {
+    font-size: 2.8rem;
+  }
+
+  .contentFind > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .contentFind > div select, .contentFind > div button {
+    height: 45px;
+  }
+
+  .contentResult h2 {
+    font-size: 2.4rem;
+  }
+
+  .contentResult > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .contentResult > div > div {
+    padding: 20px 15px;
+  }
+}

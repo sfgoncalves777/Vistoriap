@@ -1,0 +1,231 @@
+.container {
+  width: 100%;
+  min-width: 350px;
+  height: 100vh;
+  padding: 20px 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container header img {
+  width: 150px;
+}
+
+.container a {
+  font-size: 3rem;
+  color: #D90504;
+}
+
+.container main {
+  width: 100%;
+}
+
+.contentFind {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.contentFind h1 {
+  font-size: 2rem;
+  color: #D90504;
+}
+
+.contentFind > div select {
+  width: 100%;
+  margin-top: 10px;
+  height: 35px;
+  border: 1px solid;
+  font-size: 1.6rem;
+}
+
+.contentFind > div > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.contentFind > div button {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: #E9E9E9;
+  font-size: 1.8rem;
+  background: #D90504;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentFind > div button svg {
+  margin-right: 5px;
+}
+
+.contentResult {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.contentResult h2 {
+  font-size: 2rem;
+  color: #D90504;
+  margin-bottom: 15px;
+}
+
+.contentCar {
+  margin-bottom: 10px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.contentCar > picture {
+  background: #D90504;
+  border-radius: 6px 0px 0px 6px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentCar > picture > span {
+  border-radius: 6px 0px 0px 0px;
+  background: #D90504;
+  color: #F2F2F2;
+  padding: 7px 11px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  max-height: 200px;
+  max-width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contentCar > picture > img {
+  border-radius: 6px 0px 0px 6px;
+  max-width: 100%;
+}
+
+.contentCar > div {
+  background: #DADED5;
+  padding: 10px;
+  border-radius: 0px 6px 6px 0px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.contentCar > div > h3 {
+  font-size: 1.8rem;
+  color: #D90504;
+}
+
+.contentCar > div > div {
+  margin-bottom: 5px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.contentCar > div > div > span {
+  color:  #D90504;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.contentCar > div > span {
+  color: #D90504;
+  font-weight: 500;
+  margin-bottom: 3px;
+  font-size: 1.4rem;
+}
+
+@media(min-width: 800px) {
+  .container {
+    padding: 50px 70px 0px;
+  }
+
+  .container header picture img {
+    width: 200px;
+  }
+
+  .container header a {
+    font-size: 4rem;
+  }
+
+  .contentFind h1 {
+    font-size: 2.8rem;
+  }
+
+  .contentFind > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .contentFind > div select, .contentFind > div button {
+    height: 45px;
+  }
+
+  .contentFind > div > div {
+    gap: 20px;
+  }
+
+  .contentResult h2 {
+    font-size: 2.4rem;
+  }
+
+  .contentResult > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .contentCar {
+    margin-bottom: 10px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contentCar > picture {
+    border-radius: 0px;
+  }
+
+  .contentCar > picture > span {
+    border-radius: 0;
+  }
+
+  .contentCar > picture > img {
+    border-radius: 0px;
+    max-height: 100%;
+  }
+
+  .contentCar > div {
+    border-radius: 0px 0px 6px 6px;
+  }
+
+  .contentCar > div > div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contentCar > div > div span:first-child {
+    margin-right: 8px;
+  }
+}
